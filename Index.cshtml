@@ -1,0 +1,93 @@
+﻿@model TestData.Web.Models.Restaurant
+
+
+@{
+    ViewBag.Title = "AddRestaurant";
+}
+
+
+
+<h1 id="title">List of Restaurants</h1>
+<style>
+    #title h1 {
+        text-decoration: wavy;
+    }
+</style>
+
+<body>
+
+
+    <a class="btn btn-primary" id="btn">New Restaurant</a>
+
+
+
+
+
+    <div id="inputs">
+        <div class="col-md-8 col-lg-offset-2">
+            <br />
+            <span>Name: </span> @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+            <span>Description: </span> @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+            <br />
+            <p><a class="btn btn-default" onclick="SaveRestaurant()">Save</a></p>
+        </div>
+    </div>
+ 
+
+
+    @Html.Partial("ExistingRestaurants")
+
+
+
+
+</body>
+
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script>
+
+
+    function SaveRestaurant() {
+
+        var restaurantName = $("#Name").val();
+        var restaurantDescription = $("#Description").val();
+
+        //go to controller with values
+        //contrust model & resend me what you get
+
+        $.ajax({
+            type: "POST",
+            url: "Home/AddRestaurant",
+            data: JSON.stringify({ Name: restaurantName, Description: restaurantDescription }),
+            contentType: "application/json",
+            success: function () {
+                location.reload();
+            }
+        })
+
+    }
+
+</script>
+
+<script>
+
+   
+
+    $(document).ready(function () {
+
+        $("#inputs").hide();
+
+        $("#btn").click(function () {
+
+            $("#inputs").toggle();
+
+
+        })
+
+    });
+
+
+</script>
+
+
+
+

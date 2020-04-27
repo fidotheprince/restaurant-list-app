@@ -1,0 +1,18 @@
+﻿@model TestData.Web.Models.Restaurant
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h1>Delete @Model.Name?</h1>
+
+@using(Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div>
+        <input type="submit" value="Delete" class="btn btn-lg"/>
+        <!--add action link that returns to index-->
+    </div>
+
+}
+

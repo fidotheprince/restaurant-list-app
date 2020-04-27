@@ -1,0 +1,60 @@
+﻿
+<div id="table" style="margin-top: 20px">
+    <div class="col-md-8 col-lg-offset-2">
+
+        <table id="SavedRestaurants" class="table-striped">
+            <tr>
+                <th>Restaurant</th>
+                <th>Description</th>
+                <th>Updates</th>
+            </tr>
+
+        </table>
+    </div>
+</div>
+
+<style>
+    #SavedRestaurants tr th {
+        color: ghostwhite;
+        width: 300px;
+        height: 45px;
+        padding: 15px;
+        text-decoration-style: solid;
+        background-color: cadetblue;
+    }
+</style>
+
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        GetRestaurantData();
+    });
+
+    function GetRestaurantData() {
+        $.get('Home/ExistingRestaurants', {}, function (data) {
+
+            var Restaurants = $("#SavedRestaurants");
+
+            $.each(data, function (index, item) {
+                var tr = $("<tr></tr>");
+
+                tr.html(
+
+                    ("<td>" + item.Name + "</td>")
+                    + " " +
+                    ("<td>" + item.Description + "</td>")
+                    + " " +
+                    ("<td>" + "<a href='Home/Edit/" + item.Id + "'>Edit</a>" + " | " +
+                        "<a href='Home/Delete/" + item.Id + "'>Delete</a>" +
+                        "</td>")
+                )
+                Restaurants.append(tr);
+            })//.each()
+
+
+        }); //.get()
+
+
+    };
+
+</script>

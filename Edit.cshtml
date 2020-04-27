@@ -1,0 +1,45 @@
+﻿
+@model TestData.Web.Models.Restaurant
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Restaurant</h2>
+
+@using(Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class= "form-group">
+        <!-- Gate keeper for passing info into controller-->
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <!-- Hides Id-->
+        @Html.HiddenFor(model => model.Id)
+        <!--Editor for Name & Description, 
+            Model => Model.Name
+            Passes current Restaurant values as ghost values-->
+        <div> @Html.LabelFor(Model => Model.Name)</div>
+        <div class="form-group">
+            @Html.EditorFor(Model => Model.Name)
+            @Html.ValidationMessageFor(Model => Model.Name)
+        </div>
+
+
+        <div>@Html.LabelFor(Model => Model.Description)</div>
+        <div class="form-group">
+            @Html.EditorFor(Model => Model.Description)
+            @Html.ValidationMessageFor(Model => Model.Description)
+        </div>
+
+
+        <div class="form-group">
+            <div>
+                <input type="submit" value="Save" class="btn btn-lg" />
+            </div>
+        </div>
+
+</div>
+
+
+}
