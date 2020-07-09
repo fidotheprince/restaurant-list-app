@@ -9,5 +9,11 @@ This application was developed within the .NET Framework utilizing an MVC design
 Below are links for a demo of the application, user stories, and the specific technology stack implemented. 
 
 # Table of Contents 
- - [Demo] (#demo)
+ 
+- <a href="#demo">Demo</a>
+
 # Demo
+
+<p align= "center" id= "demo" > 
+   <img src="https://i.gyazo.com/5f7979c6a45aaa3a3831bef9ccf64a93.gif" width='100%'>
+</p>
