@@ -11,7 +11,7 @@ Below are links for a demo of the application, user stories, and the specific te
 # Table of Contents 
  
 - <a href="#demo">Demo</a>
-- <a href="#">User Stories</a>
+- <a href="#userst">User Stories</a>
 
 # Demo
 
@@ -20,4 +20,5 @@ Below are links for a demo of the application, user stories, and the specific te
 </p>
 
 # User Stories 
+<p id="userst"></p>
 
