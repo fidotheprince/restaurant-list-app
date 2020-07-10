@@ -13,7 +13,6 @@ Below are links for a demo of the application, user stories, and the specific te
 - <a href="#demo">Demo</a>
 - <a href="#userst">User Stories</a>
 - <a href="#stack">Stack</a>
-- <a href="#reflect">Reflection</a>
 
 
 # Demo
@@ -49,7 +48,6 @@ As a user, I want to be able to use google maps and navigate to the restaurant
 
 
 # Reflection
-<p id="#reflect"></p>
 
 I adore the Model View Controller design pattern. Utilizing it through the .NET Framework enables me to understand the lifecycle of data. 
 
