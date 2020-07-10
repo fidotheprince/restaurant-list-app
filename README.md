@@ -12,6 +12,7 @@ Below are links for a demo of the application, user stories, and the specific te
  
 - <a href="#demo">Demo</a>
 - <a href="#userst">User Stories</a>
+- <a href="#stack">Stack</a>
 
 # Demo
 
@@ -30,7 +31,7 @@ As a user, I want to able to look at the menu of the restaurant
 As a user, I want to be able to use google maps and navigate to the restaurant
 
 # Stack
-
+<p id="#stack"></p>
 - .NET Framework
 - .Entity Framework
 - LINQ
