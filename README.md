@@ -48,7 +48,6 @@ As a user, I want to be able to use google maps and navigate to the restaurant
 - CSS 
 
 # Reflection
-
 <p id="#reflect"></p>
 
 I adore the Model View Controller design pattern. Utilizing it through the .NET Framework enables me to understand the lifecycle of data. 
