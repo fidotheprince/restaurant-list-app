@@ -45,4 +45,17 @@ As a user, I want to be able to use google maps and navigate to the restaurant
 - HTML
 - CSS 
 
+# Reflections 
+
+I adore the Model View Controller design pattern. Utilizing it through the .NET Framework enables me to understand the lifecycle of data. 
+
+Specifically, I love how user input can change the characteristics of a data table in the backend.  
+
+Accordingly, a .NET Web Application is like an iceberg. For example, the user sees the data (model) scaffolded through a View file. Then there is machinery in the background (controller) that decides what to do with input. 
+
+Most of my difficulties with the application had to do with the configuration of adding LINQ and the Entity Framework on the backend. 
+
+Although the logic is fairly straightforward, every action, or method in the .NET Framework can create unintended side-effect(s) to the state of the application. 
+
+Therefore, it’s very important to consistently remember the way that different large components of the application are interacting with each other. This way, I as a programmer can predicate potential bugs or errors. On the other hand, when a bug or error arise, my deep undestanding of the MVC design pattern allow me to quickly identify the location of the error. Once I can trace the source of the malfunction. Then I can dynamically source the information required to fix it.
 
