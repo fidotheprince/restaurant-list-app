@@ -22,3 +22,25 @@ Below are links for a demo of the application, user stories, and the specific te
 # User Stories 
 <p id="userst"></p>
 
+As a user, I want to be able to dynamically add, delete and edit a restaurant onto a list. 
+
+# Coming Soon 
+
+As a user, I want to able to look at the menu of the restaurant
+As a user, I want to be able to use google maps and navigate to the restaurant
+
+# Stack
+
+- .NET Framework
+- .Entity Framework
+- LINQ
+- C# 
+- SQL
+- Razor 
+- Bootstrap 
+- jQuery, Ajax
+- JavaScript 
+- HTML
+- CSS 
+
+
