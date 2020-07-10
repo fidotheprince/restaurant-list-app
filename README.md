@@ -32,6 +32,7 @@ As a user, I want to be able to use google maps and navigate to the restaurant
 
 # Stack
 <p id="#stack"></p>
+
 - .NET Framework
 - .Entity Framework
 - LINQ
